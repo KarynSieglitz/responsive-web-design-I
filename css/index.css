@@ -269,16 +269,16 @@ body {
   /* media queries start here */
 
   @media (max-width: 800px) {
-    
-    * {
-        border: 1px solid gray !important;
+
+    body {
+        width: 95%;
     }
 
     .navContainer {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
 
       nav {
@@ -287,12 +287,46 @@ body {
           width: 95%;
       }
 
-    .heroImage {
-        display: none;
+      .hero {
+        justify-content: center;
+      }
+
+        .heroImage {
+            display: none;
     }
+
+        .button {
+            align-self: center;
+        }
+
+        .topHalf, .bottomHalf {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .topHalf p {
+            width: 96%;
+            align-self: center;
+        }
+
+        .bottomHalf p {
+            width: 85%;
+        }
+
+        .middle-img {
+            width: 100%;
+        }
+
+        .contact {
+            margin-left: 1%;
+        }
   }
 
   @media (max-width: 500px) {
+
+
 
   }
 
