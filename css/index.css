@@ -181,7 +181,7 @@ body {
   }
 
   .hero {
-    margin: 55px 15px 70px 15px;
+    margin: 55px 15px 75px 15px;
     display: flex;
     width: 100%;
     justify-content: flex-end;
@@ -326,6 +326,59 @@ body {
 
   @media (max-width: 500px) {
 
+    nav {
+        display: flex;
+       flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        }
+
+    nav a {
+        width: 100%;
+        padding-bottom: 15px;
+        align-self: center;
+        padding-top: 5%;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+
+    .hero {
+        margin-top: 10px;
+    }
+
+    .tagline {
+        margin-right: 0px;
+      }
+      
+      .button {
+        align-self: center;
+      }
+
+      .topHalf, .bottomHalf {
+          display: flex;
+          flex-wrap: wrap;
+      }
+
+      .topHalf {
+        padding: 25px 0px 25px 0px;
+      }
+
+      .bottomHalf {
+          padding-bottom: 25px;
+      }
+
+      .content .topHalf div {
+          width: 100%;
+      }
+
+      .content .bottomHalf div {
+          width: 100%;
+      }
+
+      .bottomHalf p {
+          padding-bottom: 25px;
+      }
 
 
   }
