@@ -1,3 +1,386 @@
 /* Use your own code or past solution for Great Idea Web Page CSS here! */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Titillium Web", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Bangers", cursive;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+body {
+    width: 876px;
+    margin: 0 auto;
+  }
+  
+  .navContainer {
+    display: flex;
+    width: 876px;
+    padding: 30px 0px 20px 0px;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  nav {
+    display: flex;
+    width: 876px;
+    padding: 10px 0px 20px 0px;
+    justify-content: space-between;
+    width: 70%;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: rgb(168, 168, 168);
+    font-size: 14px;
+  }
+  
+  nav a:hover {
+    color: black;
+  }
+  
+  .logo {
+      margin-top: -15px;
+  }
+
+  .hero {
+    margin: 55px 15px 75px 15px;
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  
+  .tagline {
+    font-size: 80px;
+    text-align: center;
+    font-weight: 500;
+    margin-right: 85px;
+  }
+  
+  .button {
+    padding: 7px 45px;
+    display: inline-block;
+    border: 1px solid black;
+    margin-left: 60px;
+  }
+  
+  .button a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+  }
+  
+  .button:hover {
+    background: rgb(43, 238, 108);
+  }
+  
+  content .topHalf,
+  .bottomHalf {
+    padding: 35px 0px 55px 0px;
+  }
+  
+  .topHalf {
+    padding-top: 25px;
+    border-top: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .bottomHalf {
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .middleImg {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .content .topHalf div {
+    width: 49%;
+    padding: 10px 0px 10px 0px;
+  }
+  
+  div img {
+    padding-top: 15px;
+  }
+  
+  .content .bottomHalf div {
+    width: 33%;
+  }
+  
+  address {
+    margin-top: 15px;
+    padding-bottom: 10px;
+  }
+  
+  footer {
+    margin: 50px 0px 100px 0px;
+  }
+  
+  #contact {
+    margin-top: 35px;
+  }
+  
+  footer p {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  /* media queries start here */
+
+  @media (max-width: 800px) {
+
+    body {
+        width: 95%;
+    }
+
+    .navContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+      nav {
+          display: flex;
+          margin-top: 25px;
+          width: 95%;
+      }
+
+      .hero {
+        justify-content: center;
+      }
+
+        .heroImage {
+            display: none;
+    }
+
+        .button {
+            align-self: center;
+        }
+
+        .topHalf, .bottomHalf {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .topHalf p {
+            width: 96%;
+            align-self: center;
+        }
+
+        .bottomHalf p {
+            width: 85%;
+        }
+
+        .middle-img {
+            width: 100%;
+        }
+
+        .contact {
+            margin-left: 1%;
+        }
+  }
+
+  @media (max-width: 500px) {
+
+    nav {
+        display: flex;
+       flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        }
+
+    nav a {
+        width: 100%;
+        padding-bottom: 15px;
+        align-self: center;
+        padding-top: 5%;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+
+    .hero {
+        margin-top: 10px;
+    }
+
+    .tagline {
+        margin-right: 0px;
+      }
+      
+      .button {
+        align-self: center;
+      }
+
+      .topHalf, .bottomHalf {
+          display: flex;
+          flex-wrap: wrap;
+      }
+
+      .topHalf {
+        padding: 25px 0px 25px 0px;
+      }
+
+      .bottomHalf {
+          padding-bottom: 25px;
+      }
+
+      .content .topHalf div {
+          width: 100%;
+      }
+
+      .content .bottomHalf div {
+          width: 100%;
+      }
+
+      .bottomHalf p {
+          padding-bottom: 25px;
+      }
+
+
+  }
 
 
